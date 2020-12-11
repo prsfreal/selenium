@@ -1,0 +1,33 @@
+12/03/2020 11:49:11 AM: INFO: test_login_DDT
+12/03/2020 11:49:24 AM: INFO: Entered the top level TRY
+12/03/2020 11:49:24 AM: INFO: Entered the FOR loop for the --1-- time
+12/03/2020 11:49:31 AM: INFO: Entered the login attempt TRY for the --{self.counter}-- time
+12/03/2020 11:49:31 AM: INFO: Passed a data driven test
+12/03/2020 11:49:37 AM: INFO: This TRY is only entered with correct login #1
+12/03/2020 11:49:43 AM: INFO: This TRY is only entered with correct login #2
+12/03/2020 11:49:46 AM: INFO: Successful Login
+12/03/2020 11:49:46 AM: INFO: ['Pass']
+12/03/2020 11:49:46 AM: INFO: Entered the FOR loop for the --2-- time
+12/03/2020 11:49:50 AM: INFO: Entered the login attempt TRY for the --{self.counter}-- time
+12/03/2020 11:49:54 AM: INFO: Invalid login could not find(Correct) =//*[@id="account_display_name"]
+12/03/2020 11:49:54 AM: INFO: This TRY is only entered with correct login #1
+12/03/2020 11:49:57 AM: INFO: Invalid login could not find(Correct) =//*[@id="post-1537"]/div/div/div/div/section[3]/div/div/div/div/div/div/div/div/div/div/div/div/a
+12/03/2020 11:49:57 AM: INFO: This TRY is only entered with correct login #2
+12/03/2020 11:49:57 AM: INFO: Failed to login = PASS
+12/03/2020 11:49:57 AM: INFO: ['Pass', 'Pass']
+12/03/2020 11:49:57 AM: INFO: Entered the FOR loop for the --3-- time
+12/03/2020 11:50:01 AM: INFO: Entered the login attempt TRY for the --{self.counter}-- time
+12/03/2020 11:50:04 AM: INFO: Invalid login could not find(Correct) =//*[@id="account_display_name"]
+12/03/2020 11:50:04 AM: INFO: This TRY is only entered with correct login #1
+12/03/2020 11:50:07 AM: INFO: Invalid login could not find(Correct) =//*[@id="post-1537"]/div/div/div/div/section[3]/div/div/div/div/div/div/div/div/div/div/div/div/a
+12/03/2020 11:50:07 AM: INFO: This TRY is only entered with correct login #2
+12/03/2020 11:50:07 AM: INFO: Failed to login = PASS
+12/03/2020 11:50:07 AM: INFO: ['Pass', 'Pass', 'Pass']
+12/03/2020 11:50:07 AM: INFO: ['Pass', 'Pass', 'Pass']
+12/03/2020 02:42:31 PM: INFO: **********Test_001_Login**********
+12/03/2020 02:42:31 PM: INFO: **********Navigate from homepage to Account**********
+12/03/2020 02:42:46 PM: INFO: **********PASSED**********
+12/03/2020 02:42:52 PM: INFO: Could not locate userNameField =//*[@id="username"]
+12/11/2020 11:13:09 AM: INFO: **********Test_001_Login**********
+12/11/2020 11:13:09 AM: INFO: **********Navigate from homepage to Account**********
+12/11/2020 11:13:26 AM: INFO: **********PASSED**********

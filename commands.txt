@@ -1,0 +1,5 @@
+pytest -v -s testCases/test_login.py
+pytest -v -s -n={#methods} testCases/test_login.py
+pytest -v -s -n={#methods} testCases/test_login.py --browser {browser}
+pytest -v -s -n={#methods} --html=Report/report.html testCases/test_login.py --browser {browser}
+pytest -v -s -n=2 --html=Report/report.html testCases/test_login.py --browser chrome

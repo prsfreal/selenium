@@ -1,0 +1,45 @@
+#TODO congig.ini
+move login credentials to ENV variable
+add URL of each main page of site to cut down on navigation time
+
+
+#TODO logs
+logs should only keep x# of logs and remove the oldest
+needs to be dynamically renamed to the test suite/ individual test
+
+#TODO Page Objects
+
+#TODO Reports
+Make available to the public on google cloud instance
+
+#TODO Utilities
+Add a function for each logwriter
+Every update to config.ini requires a method to read it in ReadProperties.py
+
+#TODO Test Cases
+conftest is a wrapper for the test classes(test suites)
+
+need to create a method format of testing so that each test is
+seperate and the file becomes the suite
+need to create a setup file for these methods as conftest will not work
+
+update logging messages in the testcases
+add stack trace, error log to logs
+refactor data driven to seperate the happy and neg testing
+screenshot logic needs to be implemented
+
+
+#TODO Cleanup
+Is there a way to export reports in a more concise fashion than html? (CSV)
+Everything needs to run on google cloud instance
+make git ready
+make it sharable with readme.md and etc
+
+
+
+
+
+
+
+
+
