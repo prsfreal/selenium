@@ -4,7 +4,7 @@ from selenium import webdriver
 from pageObjects.HomePage import homePage
 from pageObjects.LoginPage import loginPage
 from utilities.ReadProperties import readConfig
-from utilities.customLogger import LogGen
+from utilities.CustomLogger import LogGen
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
