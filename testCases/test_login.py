@@ -1,5 +1,7 @@
 import pytest
 import time
+import inspect
+from decouple import config
 from selenium import webdriver
 from pageObjects.HomePage import homePage
 from pageObjects.LoginPage import loginPage
@@ -8,47 +10,49 @@ from utilities.CustomLogger import LogGen
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from datetime import datetime
 
 
 
 class Test_001_Login:
-    baseURL = readConfig.BaseURL()
-    userName = readConfig.username()
-    password = readConfig.password()
+    URL = readConfig.BaseURL1()
+    userName = config('TESTID')
+    password = config('PASSKEY')
     logger = LogGen.loggen()
+    defName = (inspect.stack()[0][3])
+    testStartTime = datetime.now().strftime('%m_%d_%Y_%I%M% %p')
 
-    def test_homepage_nav_to_account_page(self, setup):
-        self.driver = setup
-        self.logger.info('**********Test_001_Login**********')
-        self.logger.info("**********Navigate from homepage to Account**********")
-        self.driver.get(self.baseURL)
-        title = self.driver.title
+    def test_0001(self, setupandteardown):
+        self.logger.info(f'***{self.defName}: Navigate from Homepage to Account Page***')
+        self.driver = setupandteardown
+        self.driver.get(self.URL)
         self.hp = homePage(self.driver)
         self.hp.navigateToAccountPage()
 
-        if title == 'Home | Validate Services':
-            self.logger.info("**********PASSED**********")
-            self.driver.close()
+        title = self.driver.title
+        if title == 'My Account | Validate Services':
+            self.logger.info("PASSED")
             assert True
+
         else:
-            self.logger.error('**********FAILED**********')
-            self.driver.save_screenshot('./Screenshots/adsfg.png')
-            self.driver.close()
+            self.logger.error('FAILED')
+            self.logger.error(f'Title = {title} NOT My Account | Validate Services')
+            self.driver.save_screenshot(f'./Screenshots/{self.defName}_{self.testStartTime}.png')
             assert False
 
 
 
 
-    '''def test_login(self, setup):
-        self.driver = setup
-        self.driver.get(self.baseURL)
+    def test_0002(self, setupandteardown):
+        self.logger.info(f'***{self.defName}: Login to Account and Logout***')
+        self.driver = setupandteardown
+        self.driver.get(self.URL)
 
         self.hp = homePage(self.driver)
         self.hp.navigateToAccountPage()
 
-
         try:
-            WebDriverWait(self.driver, 10).until(
+            WebDriverWait(self.driver, 5).until(
                 EC.presence_of_element_located((By.XPATH, loginPage.userNameField))
             )
             title = self.driver.title
@@ -58,38 +62,43 @@ class Test_001_Login:
             self.lp.clickLogin()
 
         except:
-            self.logger.info(f'Could not locate userNameField ={loginPage.userNameField}')
-            self.driver.close()
+            self.logger.info(f'Could not locate ELEMENT by XPATH')
+            self.logger.info(f'lp.userNameField XPATH = {loginPage.userNameField}')
+            assert False
 
         try:
-            WebDriverWait(self.driver, 10).until(
+            WebDriverWait(self.driver, 5).until(
                 EC.presence_of_element_located((By.XPATH, loginPage.logoutButton))
             )
             self.lp.clickLogout()
 
         except:
-            self.logger.info(f'Could not locate logoutButton ={loginPage.logoutButton}')
-            self.driver.close()
+            self.logger.info(f'Could not locate ELEMENT by XPATH')
+            self.logger.info(f'lp.logoutButton XPATH = {loginPage.logoutButton}')
+            assert False
 
 
         try:
-            WebDriverWait(self.driver, 10).until(
+            WebDriverWait(self.driver, 5).until(
                 EC.presence_of_element_located((By.XPATH, loginPage.confirmLogout))
             )
             self.lp.clickConfirm()
-            self.driver.close()
+
 
         except:
-            self.logger.info(f'Could not locate confirmLogout ={loginPage.confirmLogout}')
-            print('what am i doing here')
-            self.driver.close()
+            self.logger.info(f'Could not locate ELEMENT by XPATH')
+            self.logger.info(f'lp.confirmLogout XPATH ={loginPage.confirmLogout}')
+            assert False
 
 
         if title == 'My Account | Validate Services':
-            self.logger.info("**********PASSED**********")
+            self.logger.info('PASSED')
             assert True
+
         else:
-            self.logger.info("**********FAILED**********")
-            assert False'''
+            self.logger.error('FAILED')
+            self.logger.error(f'Title = {title} NOT My Account | Validate Services')
+            self.driver.save_screenshot(f'./Screenshots/{self.defName}.png')
+            assert False
 
 

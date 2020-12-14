@@ -1,0 +1,7 @@
+[
+  "testCases/DataDrivenLogin.py::Test_002_DDT_Login::test_login_DDT",
+  "testCases/test_login.py::Test_001_Login::test_0001",
+  "testCases/test_login.py::Test_001_Login::test_0002",
+  "testCases/test_login.py::Test_001_Login::test_homepage_nav_to_account_page",
+  "testCases/test_login.py::Test_001_Login::test_login"
+]

@@ -1,5 +1,22 @@
-pytest -v -s testCases/test_login.py
-pytest -v -s -n={#methods} testCases/test_login.py
-pytest -v -s -n={#methods} testCases/test_login.py --browser {browser}
-pytest -v -s -n={#methods} --html=Report/report.html testCases/test_login.py --browser {browser}
-pytest -v -s -n=2 --html=Report/report.html testCases/test_login.py --browser chrome
+#TODO Run a test suite Class
+pytest {PATH TO FILE}
+pytest testCases/test_login.py
+
+#TODO Run an individual test
+pytest {PATH TO FILE} -k '{FUNCTION NAME}'
+pytest testCases/test_login.py -k 'test_0001'
+
+#TODO Run parallel tests
+pytest -n={MAX IS 3} {PATH TO FILE} -k '{FUNCTION NAME}'
+pytest -n=2 testCases/test_login.py -k 'test_0001'
+
+#TODO Select Browser/Mode
+pytest -n={MAX IS 3} {PATH TO FILE} -k '{FUNCTION NAME}' --browser {BROWSER FROM CONFTEST.py SETUP()}
+pytest -n=2 testCases/test_login.py -k 'test_0001' --browser firefoxless
+
+#TODO Create an HTML report
+pytest -n={MAX IS 3} {PATH TO FILE} -k '{FUNCTION NAME}' --browser {BROWSER FROM CONFTEST.py SETUP()} --html={PATH TO FILE}
+pytest -n=1 testCases/test_login.py -k 'test_0001' --browser chrome --html=Report/report.html
+
+#TODO Self Contained Report for sharing
+pytest testCases/test_login.py -k 'test_0001' --html=Report/report.html --self-contained-html

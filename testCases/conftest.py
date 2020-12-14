@@ -1,10 +1,24 @@
+#conftest is a fixture for the test classes(test suites)
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as CO
 from selenium.webdriver.firefox.options import Options as FFO
 import pytest
+from datetime import datetime
 
+
+#Capture the command line input and pass to fixture
+def pytest_addoption(parser):
+    parser.addoption("--browser")
 @pytest.fixture()
-def setup(browser):
+
+def browser(request):
+    return request.config.getoption('--browser')
+
+
+
+#Open correct driver and close after each test
+@pytest.fixture()
+def setupandteardown(browser):
     if browser == 'chrome':
         driver = webdriver.Chrome()
 
@@ -14,13 +28,6 @@ def setup(browser):
         chrome_options.add_argument("--headless")
         driver = webdriver.Chrome(options=chrome_options)
 
-        ###Optional arguments for Headless
-        # chrome_options.headless = True
-        # chrome_options.add_argument("--disable-extensions")
-        # chrome_options.add_argument("--disable-gpu")
-        # chrome_options.add_argument("--no-sandbox") # linux only
-        # chrome_options.add_argument("--headless")
-
     elif browser == 'firefox':
         driver = webdriver.Firefox()
 
@@ -29,38 +36,38 @@ def setup(browser):
         firefox_options.add_argument("-headless")
         driver = webdriver.Firefox(options=firefox_options)
 
-
     elif browser == 'safari':
         #safari does not like to run in parallel
         driver = webdriver.Safari()
         driver.set_window_size(1920, 1080)
+
     else:
         driver = webdriver.Chrome()
 
-    return driver
+    yield driver
+
+    driver.close()
 
 
 
-def pytest_addoption(parser):
-    parser.addoption("--browser")
 
 
-@pytest.fixture()
-def browser(request):
-    return request.config.getoption('--browser')
 
 
 
 #TODO PYTEST HTML REPORT
-#Customize HTML data
+#Add rows to the Environment table HTML data
 def pytest_configure(config):
-    config._metadata['Project Name'] = 'non Commerce'
-    config._metadata['Module Name'] = 'Customers'
-    config._metadata['Tester'] = 'Philip'
+    config._metadata['Project Name'] = 'Validate Services'
 
 #Remove from HTML report
 @pytest.mark.optionalhook
 def pytest_metadata(metadata):
-    #metadata.pop("Java_Home", None)
-    #metadata.pop("Plugins", None)
+    metadata.pop("JAVA_HOME", None)
+    metadata.pop("Plugins", None)
     pass
+
+#Set the title of the report
+def pytest_html_report_title(report):
+    report.title = datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')
+

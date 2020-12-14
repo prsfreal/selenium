@@ -23,16 +23,17 @@ class Test_002_DDT_Login:
         self.driver = setup
         self.driver.get(self.baseURL)
 
+        status = []
         self.rows = ExcelUtilities.getRowCount(self.dataPath, 'Sheet1')
         self.columns = ExcelUtilities.getColumnCount(self.dataPath, 'Sheet1')
-        status = []
+
 
         self.hp = homePage(self.driver)
         self.hp.navigateToAccountPage()
+
+
+
         self.counter = 1
-
-
-
         try:
             self.logger.info('Entered the top level TRY')
             WebDriverWait(self.driver, 10).until(
