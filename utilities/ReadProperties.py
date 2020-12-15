@@ -8,8 +8,8 @@ config.read('./Configurations/config.ini')
 
 class readConfig:
     @staticmethod
-    def BaseURL1():
-        url = config.get('common info', 'baseURL1')
+    def URLHome():
+        url = config.get('common info', 'URLHome')
         return url
 
     @staticmethod

@@ -1,21 +1,10 @@
 
-#TODO Page Objects
-
-
-#TODO Test Cases
-refactor data driven to seperate the happy and neg testing
-
-
-#TODO OPENPYXL
-add all methods that make sense
-
-
 
 #TODO Cleanup
 Everything needs to run on google cloud instance
 make git ready
 make it sharable with readme.md and etc
-pyignore file
+
 
 
 

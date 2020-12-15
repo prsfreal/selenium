@@ -1,0 +1,125 @@
+12/14/2020 03:23:36 PM: INFO: ***Test_001_Login: Navigate from Homepage to Account Page***
+12/14/2020 03:23:50 PM: INFO: PASSED
+12/14/2020 03:23:53 PM: INFO: ***Test_001_Login: Login to Account and Logout***
+12/14/2020 03:24:59 PM: INFO: PASSED
+12/15/2020 01:45:34 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 01:48:15 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 01:48:22 PM: INFO: FAILED - Slider 1 Text did not match
+12/15/2020 01:48:22 PM: INFO: FAILED - 1 elements failed to verfiy.
+12/15/2020 01:49:20 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 01:49:26 PM: INFO: FAILED - Slider 1 Text did not match
+12/15/2020 01:49:26 PM: INFO: FAILED - 1 elements failed to verfiy.
+12/15/2020 01:51:02 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 01:51:36 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 01:51:41 PM: INFO: FAILED - Slider 1 Text did not match
+12/15/2020 01:51:41 PM: INFO: FAILED - 1 elements failed to verfiy.
+12/15/2020 01:54:10 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 01:54:14 PM: INFO: FAILED - Slider 1 Text did not match
+12/15/2020 01:54:14 PM: INFO: FAILED - 1 elements failed to verfiy.
+12/15/2020 02:04:04 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 02:04:10 PM: INFO: PASSED-Slider1 text present
+12/15/2020 02:04:10 PM: INFO: PASSED
+12/15/2020 02:10:10 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 02:10:17 PM: INFO: PASSED-Slider1 text present
+12/15/2020 02:10:17 PM: INFO: PASSED-Slider2 text present
+12/15/2020 02:10:17 PM: INFO: PASSED-Slider3 text present
+12/15/2020 02:10:17 PM: INFO: PASSED
+12/15/2020 02:10:41 PM: INFO: ***Test_HomePageSuite: Verify Text of 3 Banners***
+12/15/2020 02:10:44 PM: INFO: PASSED-Slider1 text present
+12/15/2020 02:10:44 PM: INFO: PASSED-Slider2 text present
+12/15/2020 02:10:44 PM: INFO: FAILED - Slider 3 Text did not match
+12/15/2020 02:10:44 PM: INFO: FAILED - 1 elements failed to verfiy.
+12/15/2020 02:37:18 PM: INFO: ***Test_HomePageSuite: testCases.HomePageTests Verify Text of 3 Banners is Present***
+12/15/2020 02:37:27 PM: INFO: Slider1 text present
+12/15/2020 02:37:27 PM: INFO: Slider2 text present
+12/15/2020 02:37:27 PM: INFO: Slider3 text present
+12/15/2020 02:37:27 PM: INFO: PASSED
+12/15/2020 02:59:50 PM: INFO: ***Test_HomePageSuite: test_0001: Verify Text of 3 Banners is Present***
+12/15/2020 02:59:50 PM: INFO: Slider1 text present
+12/15/2020 02:59:50 PM: INFO: Slider2 text present
+12/15/2020 02:59:50 PM: INFO: Slider3 text present
+12/15/2020 02:59:50 PM: INFO: PASSED
+12/15/2020 02:59:55 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:03:11 PM: INFO: ***Test_HomePageSuite: test_0001: Verify Text of 3 Banners is Present***
+12/15/2020 03:03:11 PM: INFO: Slider1 text present
+12/15/2020 03:03:11 PM: INFO: Slider2 text present
+12/15/2020 03:03:11 PM: INFO: Slider3 text present
+12/15/2020 03:03:11 PM: INFO: PASSED
+12/15/2020 03:03:23 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:03:23 PM: INFO: Found the FAQ1 details
+12/15/2020 03:06:48 PM: INFO: ***Test_HomePageSuite: test_0001: Verify Text of 3 Banners is Present***
+12/15/2020 03:06:48 PM: INFO: Slider1 text present
+12/15/2020 03:06:48 PM: INFO: Slider2 text present
+12/15/2020 03:06:48 PM: INFO: Slider3 text present
+12/15/2020 03:06:48 PM: INFO: PASSED\n\n
+12/15/2020 03:07:23 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:07:23 PM: INFO: Found the FAQ1 details
+12/15/2020 03:07:23 PM: INFO: PASSED\n\n
+12/15/2020 03:10:23 PM: INFO: ***Test_HomePageSuite: test_0001: Verify Text of 3 Banners is Present***
+12/15/2020 03:10:23 PM: INFO: Slider1 text present
+12/15/2020 03:10:23 PM: INFO: Slider2 text present
+12/15/2020 03:10:23 PM: INFO: Slider3 text present
+12/15/2020 03:10:23 PM: INFO: PASSED
+
+12/15/2020 03:10:29 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:10:29 PM: INFO: Found the FAQ1 details
+12/15/2020 03:10:29 PM: INFO: PASSED
+
+12/15/2020 03:10:51 PM: INFO: ***Test_HomePageSuite: test_0001: Verify Text of 3 Banners is Present***
+12/15/2020 03:10:51 PM: INFO: Slider1 text present
+12/15/2020 03:10:51 PM: INFO: Slider2 text present
+12/15/2020 03:10:51 PM: INFO: Slider3 text present
+12/15/2020 03:10:51 PM: INFO: PASSED
+
+12/15/2020 03:10:56 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:10:56 PM: INFO: Found the FAQ1 details
+12/15/2020 03:10:56 PM: INFO: PASSED
+
+12/15/2020 03:35:19 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:35:19 PM: INFO: Found the FAQ1 details
+12/15/2020 03:35:19 PM: INFO: PASSED
+
+12/15/2020 03:36:49 PM: INFO: ***Test_HomePageSuite: test_0001: Verify Text of 3 Banners is Present***
+12/15/2020 03:36:49 PM: INFO: Slider1 text present
+12/15/2020 03:36:49 PM: INFO: Slider2 text present
+12/15/2020 03:36:49 PM: INFO: Slider3 text present
+12/15/2020 03:36:49 PM: INFO: PASSED
+
+12/15/2020 03:36:57 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:36:57 PM: INFO: Found the FAQ1 details
+12/15/2020 03:36:57 PM: INFO: PASSED
+
+12/15/2020 03:40:08 PM: INFO: ***Test_HomePageSuite: test_0001: Verify Text of 3 Banners is Present***
+12/15/2020 03:40:08 PM: INFO: Slider1 text present
+12/15/2020 03:40:08 PM: INFO: Slider2 text present
+12/15/2020 03:40:08 PM: INFO: Slider3 text present
+12/15/2020 03:40:08 PM: INFO: PASSED
+
+12/15/2020 03:44:04 PM: INFO: ***Test_HomePageSuite: test_0002: Open FAQ 1***
+12/15/2020 03:44:04 PM: INFO: Found the FAQ1 details
+12/15/2020 03:44:04 PM: INFO: PASSED
+
+12/15/2020 04:03:27 PM: INFO: ***Test_HomePageSuite: test_0003: Footer Link***
+12/15/2020 04:05:06 PM: INFO: ***Test_HomePageSuite: test_0003: Footer Link***
+12/15/2020 04:05:11 PM: INFO: Could not locate ELEMENT by XPATH
+12/15/2020 04:05:11 PM: INFO: pp.paragraph XPATH = //*[@id="post-2341"]/div/div/div/div/section/div/div/div/div/div/div/div/div/p[1]
+
+12/15/2020 04:09:53 PM: INFO: ***Test_HomePageSuite: test_0003: Footer Link***
+12/15/2020 04:09:58 PM: INFO: Could not locate ELEMENT by XPATH
+12/15/2020 04:09:58 PM: INFO: pp.paragraph XPATH = //*[@id="post-2341"]/div/div/div/div/section/div/div/div/div/div/div/div/div/p[1]/text()
+
+12/15/2020 04:13:18 PM: INFO: ***Test_HomePageSuite: test_0003: Footer Link***
+12/15/2020 04:13:18 PM: INFO: Privacy Policy
+12/15/2020 04:13:23 PM: INFO: Could not locate ELEMENT by XPATH
+12/15/2020 04:13:23 PM: INFO: pp.paragraph XPATH = //*[@id="post-2341"]/div/div/div/div/section/div/div/div/div/div/div/div/div/p[1]/text()
+
+12/15/2020 04:15:03 PM: INFO: ***Test_HomePageSuite: test_0003: Footer Link***
+12/15/2020 04:15:03 PM: INFO: Privacy Policy
+12/15/2020 04:15:11 PM: INFO: Could not locate ELEMENT by XPATH
+12/15/2020 04:15:11 PM: INFO: pp.paragraph XPATH = //*[@id="post-2341"]/div/div/div/div/section/div/div/div/div/div/div/div/div/p[1]/text()
+
+12/15/2020 04:17:13 PM: INFO: ***Test_HomePageSuite: test_0003: Footer Link***
+12/15/2020 04:17:13 PM: INFO: Privacy Policy
+12/15/2020 04:17:16 PM: INFO: Found the Privacy Policy Page
+12/15/2020 04:17:16 PM: INFO: PASSED
+

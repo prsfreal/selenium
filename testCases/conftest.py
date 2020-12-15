@@ -9,8 +9,8 @@ from datetime import datetime
 #Capture the command line input and pass to fixture
 def pytest_addoption(parser):
     parser.addoption("--browser")
-@pytest.fixture()
 
+@pytest.fixture()
 def browser(request):
     return request.config.getoption('--browser')
 

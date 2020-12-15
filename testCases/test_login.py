@@ -15,7 +15,7 @@ from datetime import datetime
 
 
 class Test_001_Login:
-    URL = readConfig.BaseURL1()
+    URL = readConfig.URLHome()
     userName = config('TESTID')
     password = config('PASSKEY')
     logger = LogGen.loggen()
