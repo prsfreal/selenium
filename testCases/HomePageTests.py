@@ -1,6 +1,5 @@
 import inspect
 import pytest
-from datetime import datetime
 from selenium import webdriver
 from pageObjects.HomePage import homePage
 from pageObjects.PrivacyPolicy import PrivacyPolicy
@@ -26,10 +25,9 @@ class Test_HomePageSuite:
 
 
     def test_0001(self, additionalSetup):
+        self.logger.info(f'***{self.defName}: test_0001: Verify Text of 3 Banners is Present***')
         self.counter = 0
         self.src = self.driver.page_source
-
-        self.logger.info(f'***{self.defName}: test_0001: Verify Text of 3 Banners is Present***')
 
         if self.hp.slider1text in self.src:
             self.logger.info("Slider1 text present")

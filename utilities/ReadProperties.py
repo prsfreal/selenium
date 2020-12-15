@@ -13,6 +13,16 @@ class readConfig:
         return url
 
     @staticmethod
-    def BaseURL2():
-        url = config.get('common info', 'baseURL2')
+    def URLAccounts():
+        url = config.get('common info', 'URLAccounts')
+        return url
+
+    @staticmethod
+    def URLSolutions():
+        url = config.get('common info', 'URLSolutions')
+        return url
+
+    @staticmethod
+    def URLArticles():
+        url = config.get('common info', 'URLArticles')
         return url
