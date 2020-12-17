@@ -420,3 +420,176 @@ NoneType: None
 12/16/2020 04:57:41 PM: INFO: Peter
 12/16/2020 04:57:41 PM: INFO: PASSED
 
+12/16/2020 08:10:31 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:10:31 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    WebDriverWait(self.driver, 5).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=87.0.4280.88)
+
+12/16/2020 08:10:31 PM: INFO: ap.twitterwidget XPATH = None
+
+12/16/2020 08:18:35 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:18:35 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    WebDriverWait(self.driver, 5).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=87.0.4280.88)
+
+12/16/2020 08:18:35 PM: INFO: ap.twitterwidget XPATH = None
+
+12/16/2020 08:19:30 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:19:30 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    WebDriverWait(self.driver, 5).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 71, in until
+    value = method(self._driver)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 415, in _find_element
+    raise e
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'value' must be a string
+  (Session info: chrome=87.0.4280.88)
+
+12/16/2020 08:19:30 PM: INFO: ap.twitterwidget XPATH = None
+
+12/16/2020 08:21:21 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:21:21 PM: INFO: i clicked on the article?
+12/16/2020 08:21:21 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    self.logger('i should wait for the page to reload')
+TypeError: 'RootLogger' object is not callable
+12/16/2020 08:21:21 PM: INFO: ap.twitterwidget XPATH = None
+
+12/16/2020 08:22:28 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:22:31 PM: INFO: i clicked on the article?
+12/16/2020 08:22:31 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 35, in test_0001
+    self.logger('i should wait for the page to reload')
+TypeError: 'RootLogger' object is not callable
+12/16/2020 08:22:31 PM: INFO: ap.twitterwidget XPATH = None
+
+12/16/2020 08:23:43 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:23:49 PM: INFO: i clicked on the article?
+12/16/2020 08:23:49 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 36, in test_0001
+    self.logger('i should wait for the page to reload')
+TypeError: 'RootLogger' object is not callable
+12/16/2020 08:23:49 PM: INFO: ap.twitterwidget XPATH = None
+
+12/16/2020 08:25:29 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:29:03 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:31:29 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:31:44 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:34:37 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:34:41 PM: INFO: i clicked on the article?
+12/16/2020 08:34:41 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    self.logger('i should wait for the page to reload')
+TypeError: 'RootLogger' object is not callable
+12/16/2020 08:34:41 PM: INFO: ap.twitterwidget XPATH = None
+
+12/16/2020 08:40:40 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:40:44 PM: INFO: i clicked on the article?
+12/16/2020 08:40:44 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    self.logger('i should wait for the page to reload')
+TypeError: 'RootLogger' object is not callable
+12/16/2020 08:40:44 PM: INFO: ap.twitterwidget XPATH = //*[@id="main"]/div/div/section[2]/div/div/div/div/div/div[2]/div/div/div[2]
+
+12/16/2020 08:41:44 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:41:48 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    self.logger('i should wait for the page to reload')
+TypeError: 'RootLogger' object is not callable
+12/16/2020 08:41:48 PM: INFO: ap.twitterwidget XPATH = //*[@id="main"]/div/div/section[2]/div/div/div/div/div/div[2]/div/div/div[2]/div
+
+12/16/2020 08:43:54 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:43:58 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 34, in test_0001
+    self.logger('i should wait for the page to reload')
+TypeError: 'RootLogger' object is not callable
+12/16/2020 08:43:58 PM: INFO: ap.twitterwidget XPATH = //*[@id="main"]/div/div/section[2]/div/div/div/div/div/div[2]/div/div/div[2]/div/span/span
+
+12/16/2020 08:44:31 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:44:35 PM: INFO: i should wait for the page to reload
+12/16/2020 08:44:35 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 39, in test_0001
+    self.ap.navigateToTwitter()
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/ArticlePage.py", line 20, in navigateToTwitter
+    self.action.perform()
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/action_chains.py", line 80, in perform
+    self.w3c_actions.perform()
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/actions/action_builder.py", line 76, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=87.0.4280.88)
+
+12/16/2020 08:44:35 PM: INFO: ap.twitterwidget XPATH = //*[@id="main"]/div/div/section[2]/div/div/div/div/div/div[2]/div/div/div[2]/div/span/span
+
+12/16/2020 08:45:24 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:45:28 PM: INFO: i should wait for the page to reload
+12/16/2020 08:46:44 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:46:47 PM: INFO: i should wait for the page to reload
+12/16/2020 08:46:49 PM: INFO: did i send the keys
+12/16/2020 08:59:24 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 08:59:28 PM: INFO: i should wait for the page to reload
+12/16/2020 08:59:30 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/ArticlesPageTests.py", line 52, in test_0001
+    EC.presence_of_element_located((By.XPATH, self.ap.twitterenterfield))
+AttributeError: 'articlePage' object has no attribute 'twitterenterfield'
+12/16/2020 09:00:29 PM: INFO: ***basic: test_0001: Send a tweet***
+12/16/2020 09:00:33 PM: INFO: i should wait for the page to reload
+12/16/2020 09:00:35 PM: INFO: did i send the keys

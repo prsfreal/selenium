@@ -22,7 +22,7 @@ class homePage():
         self.action.click(self.driver.find_element_by_xpath(self.account))
         self.action.perform()
         time.sleep(1)
-        print('done')
+
 
 
 
