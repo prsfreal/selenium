@@ -1,8 +1,3 @@
-ARTICLES
-read an article and use widget post update
-leave a comment
-
-
 
 SOLUTIONS
 click into the product get started button/ make a purchase
