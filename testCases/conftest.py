@@ -15,7 +15,6 @@ def browser(request):
     return request.config.getoption('--browser')
 
 
-
 #Open correct driver and close after each test
 @pytest.fixture()
 def setupandteardown(browser):
@@ -47,10 +46,6 @@ def setupandteardown(browser):
     yield driver
 
     driver.close()
-
-
-
-
 
 
 

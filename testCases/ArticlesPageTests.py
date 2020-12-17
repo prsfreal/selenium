@@ -1,26 +1,24 @@
-import inspect
 import pytest
-from selenium import webdriver
 from pageObjects.ArticlesPage import articlePage
 from utilities.ReadProperties import readConfig
-from utilities.CustomLogger import LogGen
+from Configurations.BasicClassConfig import basic
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-class Test_ArticlePageSuite:
-    URL = readConfig.URLArticles()
-    logger = LogGen.loggen()
-    defName = (inspect.stack()[0][3])
+class Test_HomePageSuite(basic):
+    URL = readConfig.URLHome()
 
+    #This fixture sets up and driver, goes to inital URL of test, and initiates ActionChains,
+    # and initiailizes the POM class(es) for the tests
     @pytest.fixture
     def additionalSetup(self, setupandteardown):
         self.driver = setupandteardown
         self.driver.get(self.URL)
-        self.ap = articlePage(self.driver)
         self.action = ActionChains(self.driver)
+        self.ap = articlePage(self.driver)
 
 
     def test_0001(self, additionalSetup):

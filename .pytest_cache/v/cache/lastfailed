@@ -1,1 +1,4 @@
-{}
+{
+  "testCases/HomePageTests.py": true,
+  "testCases/HomePageTests.py::Test_HomePageSuite::test_0002": true
+}
