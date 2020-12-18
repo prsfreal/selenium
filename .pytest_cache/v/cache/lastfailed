@@ -1,4 +1,6 @@
 {
+  "testCases/DataDrivenLogin.py::Test_002_DDT_Login::test_login_DDT": true,
+  "testCases/DataDrivenLogin.py::Test_002_DDT_Login::test_valid_logins": true,
   "testCases/HomePageTests.py": true,
   "testCases/HomePageTests.py::Test_HomePageSuite::test_0002": true
 }

@@ -27,7 +27,7 @@ class Test_HomePageSuite(basic):
 
 
     def test_0001(self, additionalSetup):
-        self.logger.info(f'***{self.defName}: test_0003: Purchase BackgroundCheck***')
+        self.logger.info(f'***{self.defName}: test_0001: Purchase BackgroundCheck***')
         self.aap.navigateToArticle1()
 
         try:

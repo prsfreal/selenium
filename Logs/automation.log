@@ -1,0 +1,218 @@
+12/18/2020 11:24:05 AM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 11:24:43 AM: INFO: PASSED
+12/18/2020 01:55:53 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 01:55:58 PM: INFO: Entered the top level TRY
+12/18/2020 01:55:58 PM: INFO: Entered the FOR loop for the --1-- time
+12/18/2020 01:56:04 PM: INFO: Passed a data driven test #1
+12/18/2020 01:56:18 PM: INFO: ['Pass']
+12/18/2020 01:56:18 PM: INFO: Entered the FOR loop for the --2-- time
+12/18/2020 01:56:30 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 51, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 01:56:30 PM: INFO: self.lp.displayName XPATH = //*[@id="account_display_name"]
+
+12/18/2020 01:56:30 PM: INFO: Entered the FOR loop for the --3-- time
+12/18/2020 01:56:40 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 51, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 01:56:40 PM: INFO: self.lp.displayName XPATH = //*[@id="account_display_name"]
+
+12/18/2020 01:56:40 PM: INFO: ['Pass']
+12/18/2020 02:01:26 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:01:33 PM: INFO: Entered the top level TRY
+12/18/2020 02:01:33 PM: INFO: Entered the FOR loop for the --1-- time
+12/18/2020 02:01:40 PM: INFO: Passed a data driven test #1
+12/18/2020 02:01:55 PM: INFO: ['Pass']
+12/18/2020 02:01:55 PM: INFO: Entered the FOR loop for the --2-- time
+12/18/2020 02:02:05 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 48, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 02:02:05 PM: INFO: self.lp.displayName XPATH = //*[@id="account_display_name"]
+
+12/18/2020 02:02:05 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 48, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 63, in test_login_DDT
+    assert False
+AssertionError: assert False
+12/18/2020 02:02:05 PM: INFO: self.lp.displayName XPATH = //*[@id="username"]
+
+12/18/2020 02:05:19 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:05:24 PM: INFO: Entered the top level TRY
+12/18/2020 02:05:24 PM: INFO: Entered the FOR loop for the --1-- time
+12/18/2020 02:05:31 PM: INFO: Passed a data driven test #1
+12/18/2020 02:05:45 PM: INFO: ['Pass']
+12/18/2020 02:05:45 PM: INFO: Entered the FOR loop for the --2-- time
+12/18/2020 02:05:55 PM: INFO: Incorrect login = FAIL
+12/18/2020 02:05:55 PM: INFO: -FAILED LOGIN ATTEMPT
+12/18/2020 02:06:00 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 71, in test_login_DDT
+    self.waitAndsee(self.lp.confirmLogout)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 02:06:00 PM: INFO: self.lp.displayName XPATH = //*[@id="post-1537"]/div/div/div/div/section[3]/div/div/div/div/div/div/div/div/div/div/div/div/a
+
+12/18/2020 02:06:00 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 71, in test_login_DDT
+    self.waitAndsee(self.lp.confirmLogout)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 77, in test_login_DDT
+    assert False
+AssertionError: assert False
+12/18/2020 02:06:00 PM: INFO: self.lp.displayName XPATH = //*[@id="username"]
+
+12/18/2020 02:07:46 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:07:52 PM: INFO: Entered the top level TRY
+12/18/2020 02:07:52 PM: INFO: Entered the FOR loop for the --1-- time
+12/18/2020 02:08:00 PM: INFO: Passed a data driven test #1
+12/18/2020 02:08:17 PM: INFO: ['Pass']
+12/18/2020 02:08:17 PM: INFO: Entered the FOR loop for the --2-- time
+12/18/2020 02:08:27 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 48, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 02:08:27 PM: INFO: self.lp.displayName XPATH = //*[@id="post-1537"]/div/div/div/div/section[3]/div/div/div/div/div/div/div/div/div/div/div/div/a
+
+12/18/2020 02:08:27 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 48, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 64, in test_login_DDT
+    assert False
+AssertionError: assert False
+12/18/2020 02:08:27 PM: INFO: self.lp.displayName XPATH = //*[@id="username"]
+
+12/18/2020 02:13:52 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:13:57 PM: INFO: Entered the top level TRY
+12/18/2020 02:13:57 PM: INFO: Entered the FOR loop for the --1-- time
+12/18/2020 02:14:04 PM: INFO: Test 1 = PASS
+12/18/2020 02:14:17 PM: INFO: ['Pass']
+12/18/2020 02:14:17 PM: INFO: Entered the FOR loop for the --2-- time
+12/18/2020 02:14:26 PM: ERROR: Test 2 = FAIL
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 47, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 02:14:26 PM: INFO: ['Pass', 'Pass']
+12/18/2020 02:14:26 PM: INFO: Entered the FOR loop for the --3-- time
+12/18/2020 02:14:36 PM: ERROR: Test 3 = FAIL
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DataDrivenLogin.py", line 47, in test_login_DDT
+    self.waitAndsee(self.lp.displayName)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 02:14:36 PM: INFO: ['Pass', 'Pass', 'Pass']
+12/18/2020 02:14:36 PM: INFO: ['Pass', 'Pass', 'Pass']
+12/18/2020 02:21:45 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:21:51 PM: INFO: Entered the top level TRY
+12/18/2020 02:21:57 PM: INFO: Test 1 = PASS
+12/18/2020 02:22:11 PM: INFO: ['Pass']
+12/18/2020 02:22:21 PM: INFO: Test 2 = FAIL
+12/18/2020 02:22:21 PM: INFO: ['Pass', 'Fail']
+12/18/2020 02:22:30 PM: INFO: Test 3 = FAIL
+12/18/2020 02:22:30 PM: INFO: ['Pass', 'Fail', 'Fail']
+12/18/2020 02:22:30 PM: INFO: ['Pass', 'Fail', 'Fail']
+12/18/2020 02:24:46 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:24:51 PM: INFO: Entered the top level TRY
+12/18/2020 02:24:57 PM: INFO: Test 1 = PASS
+12/18/2020 02:25:10 PM: INFO: ['Pass']
+12/18/2020 02:25:21 PM: INFO: Test 2 = FAIL
+12/18/2020 02:25:21 PM: INFO: admin@validateservice.comVSSadmin@12
+12/18/2020 02:25:21 PM: INFO: ['Pass', 'Fail']
+12/18/2020 02:25:30 PM: INFO: Test 3 = FAIL
+12/18/2020 02:25:30 PM: INFO: admin@validateservice.comVSSadmin@1
+12/18/2020 02:25:30 PM: INFO: ['Pass', 'Fail', 'Fail']
+12/18/2020 02:27:03 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:27:08 PM: INFO: Entered the top level TRY
+12/18/2020 02:27:15 PM: INFO: Test 1 = PASS
+12/18/2020 02:27:27 PM: INFO: ['Pass']
+12/18/2020 02:27:40 PM: INFO: Test 2 = FAIL
+12/18/2020 02:27:40 PM: INFO: ID:admin@validateservice.com   PASS:VSSadmin@12
+12/18/2020 02:27:40 PM: INFO: ['Pass', 'Fail']
+12/18/2020 02:27:49 PM: INFO: Test 3 = FAIL
+12/18/2020 02:27:49 PM: INFO: ID:admin@validateservice.com   PASS:VSSadmin@1
+12/18/2020 02:27:49 PM: INFO: ['Pass', 'Fail', 'Fail']
+12/18/2020 02:35:57 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 02:36:31 PM: INFO: Test 1 = PASS
+12/18/2020 02:36:46 PM: INFO: ['Pass']
+
+12/18/2020 02:36:56 PM: INFO: Test 2 = FAIL
+12/18/2020 02:36:56 PM: INFO: ID:admin@validateservice.com   PASS:VSSadmin@12
+12/18/2020 02:36:56 PM: INFO: ['Pass', 'Fail']
+
+12/18/2020 02:37:06 PM: INFO: Test 3 = FAIL
+12/18/2020 02:37:06 PM: INFO: ID:admin@validateservice.com   PASS:VSSadmin@1
+12/18/2020 02:37:06 PM: INFO: ['Pass', 'Fail', 'Fail']
+
