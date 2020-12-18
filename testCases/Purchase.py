@@ -6,11 +6,7 @@ from pageObjects.FederalLanding import federalLandingPage
 from pageObjects.FederalCheckout import federalCheckoutPage
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-
 
 
 class Test_HomePageSuite(basic):
@@ -30,16 +26,12 @@ class Test_HomePageSuite(basic):
         self.fc = federalCheckoutPage(self.driver)
 
 
-
     def test_0001(self, additionalSetup):
         self.logger.info(f'***{self.defName}: test_0003: Purchase BackgroundCheck***')
         self.aap.navigateToArticle1()
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.ap.backgroundcheckbutton))
-            )
-
+            self.waitAndsee(self.ap.backgroundcheckbutton)
             self.ap.navigateToBackgroundCheck()
 
         except:
@@ -47,13 +39,8 @@ class Test_HomePageSuite(basic):
             self.logger.info(f'cbc.federalCourtButton XPATH = {self.ap.backgroundcheckbutton}\n')
             assert False
 
-
-
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.cbc.federalCourtButton))
-            )
-
+            self.waitAndsee(self.cbc.federalCourtButton)
             self.cbc.navigateToFederalCourt()
 
         except:
@@ -62,10 +49,7 @@ class Test_HomePageSuite(basic):
             assert False
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.fl.startreportbutton))
-            )
-
+            self.waitAndsee(self.fl.startreportbutton)
             self.fl.navigateToPurchase()
 
         except:
@@ -74,13 +58,21 @@ class Test_HomePageSuite(basic):
             assert False
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.fc.orderfirstname))
-            )
-
-            self.fc.makePurchase()
+            self.waitAndsee(self.fc.orderfirstname)
+            #TODO enter in the user number from Configuration.Users.user
+            self.fc.makePurchase(1)
 
         except:
             self.logger.exception(f'--Could not locate ELEMENT by XPATH')
             self.logger.info(f'fc.orderfirstname XPATH = {self.fc.orderfirstname}\n')
+            assert False
+
+        try:
+            self.waitAndsee(self.fc.addonorderbutton, 'XPATH', 60)
+            self.logger.info(f'PASSED')
+            assert True
+
+        except:
+            self.logger.exception(f'--Could not locate ELEMENT by XPATH')
+            self.logger.info(f'self.fc.addonorderbutton XPATH = {self.fc.addonorderbutton}\n')
             assert False

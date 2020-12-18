@@ -3,6 +3,7 @@
   "testCases/HomePageTests.py::Test_HomePageSuite::test_0001",
   "testCases/HomePageTests.py::Test_HomePageSuite::test_0002",
   "testCases/HomePageTests.py::Test_HomePageSuite::test_0003",
+  "testCases/Purchase.py::Test_HomePageSuite::test_0001",
   "testCases/test_login.py::Test_001_Login::test_0001",
   "testCases/test_login.py::Test_001_Login::test_0002",
   "testCases/test_login.py::Test_001_Login::test_homepage_nav_to_account_page",

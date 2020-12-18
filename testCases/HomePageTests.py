@@ -3,9 +3,6 @@ from pageObjects.HomePage import homePage
 from pageObjects.PrivacyPolicy import PrivacyPolicy
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
 
@@ -48,14 +45,11 @@ class Test_HomePageSuite(basic):
             self.logger.exception("--FAILED - Slider 3 Text did not match")
             self.counter +=1
 
-
         if self.counter == 0:
-
             self.MYSQL.cursor.execute("select * from customers where id = 15")
             record = self.MYSQL.cursor.fetchall()
             for i in record:
                 self.logger.info(i[0])
-
 
             self.logger.info("PASSED\n")
             assert True
@@ -70,13 +64,10 @@ class Test_HomePageSuite(basic):
         self.action.move_to_element(self.driver.find_element_by_xpath(self.hp.faq1list1)).click().perform()
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.hp.faq1list1))
-            )
+            self.waitAndsee(self.hp.faq1list1)
             self.logger.info('--Found the FAQ1 details')
             self.logger.info('PASSED\n')
             assert True
-
 
         except:
             self.logger.exception(f'--Could not locate ELEMENT by XPATH')
@@ -90,14 +81,10 @@ class Test_HomePageSuite(basic):
         self.pp = PrivacyPolicy(self.driver)
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.pp.paragraph))
-            )
-
+            self.waitAndsee(self.pp.paragraph)
             self.logger.info('--Found the Privacy Policy Page')
             self.logger.info('PASSED\n')
             assert True
-
 
         except:
             self.logger.exception(f'--Could not locate ELEMENT by XPATH')

@@ -6,7 +6,6 @@ class federalLandingPage():
 
     startreportbutton = '//*[@id="post-3291"]/div/div/div/div/section[8]/div/div/div/div/div/div[3]/div/div/a/span/span'
 
-
     def __init__(self, driver):
         self.driver = driver
 

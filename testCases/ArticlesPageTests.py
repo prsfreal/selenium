@@ -1,13 +1,8 @@
 import pytest
 from pageObjects.ArticlesArchivePage import articleArchivePage
 from pageObjects.ArticlePage import articlePage
-from pageObjects.CriminalBackgroundCheck import criminalBackgroundCheckPage
-from pageObjects.FederalLanding import federalLandingPage
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
 
@@ -25,18 +20,12 @@ class Test_HomePageSuite(basic):
         self.aap = articleArchivePage(self.driver)
         self.ap = articlePage(self.driver)
 
-
-
-
     def test_0001(self, additionalSetup):
         self.logger.info(f'***{self.defName}: test_0001: Send a tweet***')
         self.aap.navigateToArticle1()
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.ap.twitterwidget))
-            )
-
+            self.waitAndsee(self.ap.twitterwidget)
             self.ap.navigateToTwitter()
 
         except:
@@ -49,20 +38,15 @@ class Test_HomePageSuite(basic):
         self.logger.info('Now in second window')
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.ap.emailfield))
-            )
+            self.waitAndsee(self.ap.tweetfield)
             self.ap.signIntoTwitter()
             self.logger.info('Signed into twitter but did not send the tweet. Just requires one more command.')
             assert True
-
 
         except:
             self.logger.exception(f'--Could not locate ELEMENT by XPATH')
             self.logger.info(f'ap.tweetfield XPATH = {self.ap.tweetfield}\n')
             assert False
-
-
 
 
 
@@ -72,10 +56,7 @@ class Test_HomePageSuite(basic):
 
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.ap.discountname))
-            )
-
+            self.waitAndsee(self.ap.discountname)
             self.ap.discountsubmit()
 
         except:
@@ -84,9 +65,7 @@ class Test_HomePageSuite(basic):
             assert False
 
         try:
-            WebDriverWait(self.driver, 5).until(
-                EC.presence_of_element_located((By.XPATH, self.ap.discountverifypath))
-            )
+            self.waitAndsee(self.ap.discountverifypath)
             self.src = self.driver.page_source
             if self.ap.discountverifytext in self.src:
                 self.logger.info('PASSED')
