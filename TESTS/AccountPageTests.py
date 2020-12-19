@@ -1,7 +1,7 @@
 import pytest
 from decouple import config
-from pageObjects.HomePage import homePage
-from pageObjects.LoginPage import loginPage
+from POM.HomePage import homePage
+from POM.LoginPage import loginPage
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
 from selenium.webdriver.common.action_chains import ActionChains

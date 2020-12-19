@@ -1,6 +1,6 @@
 import pytest
-from pageObjects.HomePage import homePage
-from pageObjects.PrivacyPolicy import PrivacyPolicy
+from POM.HomePage import homePage
+from POM.PrivacyPolicy import PrivacyPolicy
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
 from selenium.webdriver.common.action_chains import ActionChains

@@ -1,9 +1,9 @@
 import pytest
-from pageObjects.ArticlesArchivePage import articleArchivePage
-from pageObjects.ArticlePage import articlePage
-from pageObjects.CriminalBackgroundCheck import criminalBackgroundCheckPage
-from pageObjects.FederalLanding import federalLandingPage
-from pageObjects.DDFederalCheckout import ddFederalCheckoutPage
+from POM.ArticlesArchivePage import articleArchivePage
+from POM.ArticlePage import articlePage
+from POM.CriminalBackgroundCheck import criminalBackgroundCheckPage
+from POM.FederalLanding import federalLandingPage
+from DDPOM.DDFederalCheckout import ddFederalCheckoutPage
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
 from selenium.webdriver.common.action_chains import ActionChains
@@ -13,7 +13,7 @@ import time
 
 class Test_HomePageSuite(basic):
     URL = readConfig.URLArticles()
-    dataPath = './TestData/data2.xlsx'
+    dataPath = './DDTESTDATA/data2.xlsx'
 
     #This fixture sets up and driver, goes to initial URL of test, initiates ActionChains,
     # and initializes the POM class(es) for the tests

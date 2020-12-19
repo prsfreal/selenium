@@ -1,9 +1,9 @@
 import pytest
-from pageObjects.ArticlesArchivePage import articleArchivePage
-from pageObjects.ArticlePage import articlePage
-from pageObjects.CriminalBackgroundCheck import criminalBackgroundCheckPage
-from pageObjects.FederalLanding import federalLandingPage
-from pageObjects.FederalCheckout import federalCheckoutPage
+from POM.ArticlesArchivePage import articleArchivePage
+from POM.ArticlePage import articlePage
+from POM.CriminalBackgroundCheck import criminalBackgroundCheckPage
+from POM.FederalLanding import federalLandingPage
+from POM.FederalCheckout import federalCheckoutPage
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
 from selenium.webdriver.common.action_chains import ActionChains

@@ -1,4 +1,4 @@
-#Contains attributes of the TestSuiteClasses that get created for each new file in ./testCases
+#Contains attributes of the TestSuiteClasses that get created for each new file in ./TESTS
 #These attributes may or not be called for each test method.
 
 import inspect

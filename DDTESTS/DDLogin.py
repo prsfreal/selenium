@@ -1,6 +1,6 @@
 import pytest
-from pageObjects.HomePage import homePage
-from pageObjects.LoginPage import loginPage
+from POM.HomePage import homePage
+from POM.LoginPage import loginPage
 from utilities.ReadProperties import readConfig
 from utilities import ExcelUtilities
 from selenium.webdriver.common.action_chains import ActionChains
@@ -9,7 +9,7 @@ from Configurations.BasicClassConfig import basic
 
 class Test_002_DDT_Login(basic):
     URL = readConfig.URLHome()
-    dataPath = './TestData/data.xlsx'
+    dataPath = './DDTESTDATA/data.xlsx'
 
     # This fixture sets up and driver, goes to initial URL of test, initiates ActionChains,
     # and initializes the POM class(es) for the tests

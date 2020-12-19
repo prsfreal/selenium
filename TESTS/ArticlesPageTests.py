@@ -1,6 +1,6 @@
 import pytest
-from pageObjects.ArticlesArchivePage import articleArchivePage
-from pageObjects.ArticlePage import articlePage
+from POM.ArticlesArchivePage import articleArchivePage
+from POM.ArticlePage import articlePage
 from utilities.ReadProperties import readConfig
 from Configurations.BasicClassConfig import basic
 from selenium.webdriver.common.action_chains import ActionChains
