@@ -1,4 +1,5 @@
 [
+  "testCases/DDPurchase.py::Test_HomePageSuite::test_0001",
   "testCases/DataDrivenLogin.py::Test_002_DDT_Login::test_login_DDT",
   "testCases/DataDrivenLogin.py::Test_002_DDT_Login::test_valid_logins",
   "testCases/HomePageTests.py::Test_HomePageSuite::test_0001",

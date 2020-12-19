@@ -216,3 +216,422 @@ selenium.common.exceptions.TimeoutException: Message:
 12/18/2020 02:37:06 PM: INFO: ID:admin@validateservice.com   PASS:VSSadmin@1
 12/18/2020 02:37:06 PM: INFO: ['Pass', 'Fail', 'Fail']
 
+12/18/2020 03:52:06 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 03:52:31 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 92, in test_0001
+    self.ddfc.setzip(self.zip)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 49, in setzip
+    self.driver.find_element_by_xpath(self.orderzip).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'float' has no len()
+12/18/2020 03:52:31 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 03:55:24 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 03:55:43 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 93, in test_0001
+    self.ddfc.setzip(self.zip)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 49, in setzip
+    self.driver.find_element_by_xpath(self.orderzip).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'float' has no len()
+12/18/2020 03:55:43 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 03:57:38 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 03:57:58 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 93, in test_0001
+    self.ddfc.setzip(self.zip)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 49, in setzip
+    self.driver.find_element_by_xpath(self.orderzip).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'float' has no len()
+12/18/2020 03:57:58 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:01:08 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:01:32 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 100, in test_0001
+    self.ddfc.setcardnum(self.ccnum)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 77, in setcardnum
+    self.driver.find_element_by_name(x).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 496, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="4242424242424242"]"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:01:32 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:03:02 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:03:27 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 99, in test_0001
+    self.ddfc.setcardnum(self.ccnum)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 77, in setcardnum
+    self.driver.find_element_by_name(x).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 496, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="4242424242424242"]"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:03:27 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:05:16 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:05:41 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 99, in test_0001
+    self.ddfc.setcardnum(self.ccnum)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 77, in setcardnum
+    self.driver.find_element_by_name(x).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 496, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="4242424242424242"]"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:05:41 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:05:56 PM: INFO: ***basic: test_0001: Purchase BackgroundCheck***
+12/18/2020 04:06:53 PM: INFO: PASSED
+12/18/2020 04:11:15 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:11:36 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 86, in test_0001
+    self.ddfc.setfname(self.fname)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 29, in setfname
+    self.driver.find_element_by_xpath(self.orderfirstname).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'NoneType' has no len()
+12/18/2020 04:11:36 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:18:05 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:18:37 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 86, in test_0001
+    self.ddfc.setfname(self.fname)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 29, in setfname
+    self.driver.find_element_by_xpath(self.orderfirstname).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'NoneType' has no len()
+12/18/2020 04:18:37 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:19:35 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:20:00 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 99, in test_0001
+    self.ddfc.setcardnum(self.ccnum)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 77, in setcardnum
+    self.driver.find_element_by_name(x).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 496, in find_element_by_name
+    return self.find_element(by=By.NAME, value=name)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="4242424242424242"]"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:20:00 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:21:29 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:21:59 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 103, in test_0001
+    self.ddfc.settandcbox()
+TypeError: settandcbox() missing 1 required positional argument: 'x'
+12/18/2020 04:21:59 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:22:49 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:23:15 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 105, in test_0001
+    self.waitAndsee()
+TypeError: waitAndsee() missing 1 required positional argument: 'elem'
+12/18/2020 04:23:15 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:24:30 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:24:55 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 102, in test_0001
+    self.ddfc.settandcbox()
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 88, in settandcbox
+    self.driver.find_element_by_xpath(self.ordertccheckbox).click()
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms"> is not clickable at point (691, 785). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;"></div>
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:24:55 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:26:35 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:27:00 PM: INFO: Test 1 = PASS
+12/18/2020 04:27:07 PM: INFO: Test 2 = PASS
+12/18/2020 04:27:09 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 86, in test_0001
+    self.ddfc.setfname(self.fname)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 29, in setfname
+    self.driver.find_element_by_xpath(self.orderfirstname).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'NoneType' has no len()
+12/18/2020 04:27:09 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:37:02 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:37:38 PM: INFO: Test 1 = PASS
+12/18/2020 04:37:42 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 97, in test_0001
+    self.ddfc.setiframe(self.ddfc.orderccinfo)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 97, in setiframe
+    self.driver.switch_to.frame(frame_reference=self.driver.find_element_by_xpath(x))
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/div/section[2]/div/div/div/div/div/div/div/div/div/div/form/div[2]/div/div[2]/ul/li/div/div/fieldset/div[1]/div/iframe"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:37:42 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:38:53 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:39:19 PM: INFO: Test 1 = PASS
+12/18/2020 04:39:24 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 97, in test_0001
+    self.ddfc.setiframe(self.ddfc.orderccinfo)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 97, in setiframe
+    self.driver.switch_to.frame(frame_reference=self.driver.find_element_by_xpath(x))
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/div/section[2]/div/div/div/div/div/div/div/div/div/div/form/div[2]/div/div[2]/ul/li/div/div/fieldset/div[1]/div/iframe"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:39:24 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:41:37 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:42:02 PM: INFO: Test 1 = PASS
+12/18/2020 04:42:08 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 98, in test_0001
+    self.ddfc.setiframe(self.ddfc.orderccinfo)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 97, in setiframe
+    self.driver.switch_to.frame(frame_reference=self.driver.find_element_by_xpath(x))
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/div/section[2]/div/div/div/div/div/div/div/div/div/div/form/div[2]/div/div[2]/ul/li/div/div/fieldset/div[1]/div/iframe"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:42:08 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:42:34 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:43:43 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 98, in test_0001
+    self.ddfc.setiframe(self.ddfc.orderccinfo)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 97, in setiframe
+    self.driver.switch_to.frame(frame_reference=self.driver.find_element_by_xpath(x))
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/div/section[2]/div/div/div/div/div/div/div/div/div/div/form/div[2]/div/div[2]/ul/li/div/div/fieldset/div[1]/div/iframe"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:43:43 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:44:44 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:45:06 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 104, in test_0001
+    self.ddfc.settandcbox()
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 94, in settandcbox
+    self.driver.find_element_by_xpath(self.ordertccheckbox).click()
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms"> is not clickable at point (691, 785). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.0929246; cursor: default; position: absolute;"></div>
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:45:06 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:45:47 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:46:10 PM: INFO: Test 1 = PASS
+12/18/2020 04:46:19 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 97, in test_0001
+    self.waitAndsee(self.ddfc.orderccinfo)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 04:46:19 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:47:09 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:47:45 PM: INFO: Test 1 = PASS
+12/18/2020 04:48:04 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 98, in test_0001
+    self.waitAndsee(self.ddfc.orderccinfo)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/Configurations/BasicClassConfig.py", line 19, in waitAndsee
+    WebDriverWait(self.driver, time).until(
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+12/18/2020 04:48:04 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:49:23 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:50:51 PM: INFO: Test 1 = PASS
+12/18/2020 04:51:07 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 98, in test_0001
+    self.ddfc.setiframe(self.ddfc.orderccinfo)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 97, in setiframe
+    def setiframe(self, x):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/div/section[2]/div/div/div/div/div/div/div/div/div/div/form/div[2]/div/div[2]/ul/li/div/div/fieldset/div[1]/div/iframe"}
+  (Session info: chrome=87.0.4280.88)
+
+12/18/2020 04:51:07 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:54:26 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:54:55 PM: INFO: Test 1 = PASS
+12/18/2020 04:55:07 PM: INFO: Test 2 = PASS
+12/18/2020 04:55:12 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 87, in test_0001
+    self.ddfc.setlname(self.lname)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 36, in setlname
+    self.driver.find_element_by_xpath(self.orderlastname).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'NoneType' has no len()
+12/18/2020 04:55:12 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 04:58:04 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 04:58:31 PM: INFO: Test 1 = PASS
+12/18/2020 04:58:42 PM: INFO: Test 2 = PASS
+12/18/2020 04:58:48 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 87, in test_0001
+    self.ddfc.setlname(self.lname)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 36, in setlname
+    self.driver.find_element_by_xpath(self.orderlastname).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'NoneType' has no len()
+12/18/2020 04:58:48 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 05:01:15 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 05:01:43 PM: INFO: Test 1 = PASS
+12/18/2020 05:01:54 PM: INFO: Test 2 = PASS
+12/18/2020 05:02:00 PM: ERROR: --Could not locate ELEMENT by XPATH
+Traceback (most recent call last):
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/testCases/DDPurchase.py", line 87, in test_0001
+    self.ddfc.setlname(self.lname)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/pageObjects/DDFederalCheckout.py", line 36, in setlname
+    self.driver.find_element_by_xpath(self.orderlastname).send_keys(x)
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 478, in send_keys
+    {'text': "".join(keys_to_typing(value)),
+  File "/Users/philiprealini/Desktop/Stuff/Python/SeleniumAutomation/venv/lib/python3.8/site-packages/selenium/webdriver/common/utils.py", line 150, in keys_to_typing
+    for i in range(len(val)):
+TypeError: object of type 'NoneType' has no len()
+12/18/2020 05:02:00 PM: INFO: fc.orderfirstname XPATH = //*[@id="billing_first_name"]
+
+12/18/2020 05:03:15 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 05:03:38 PM: INFO: Test 1 = PASS
+12/18/2020 05:03:46 PM: INFO: Test 2 = PASS
+12/18/2020 05:03:48 PM: INFO: 
+
+12/18/2020 05:04:26 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 05:04:48 PM: INFO: Test 1 = PASS
+12/18/2020 05:04:56 PM: INFO: Test 2 = PASS
+12/18/2020 05:04:59 PM: INFO: 
+
+12/18/2020 08:49:23 PM: INFO: ***basic: test_0001: Bad Purchase Info***
+12/18/2020 08:49:45 PM: INFO: Test 1 = PASS
+12/18/2020 08:49:52 PM: INFO: Test 2 = PASS
+12/18/2020 08:49:55 PM: INFO: PASSED
+
